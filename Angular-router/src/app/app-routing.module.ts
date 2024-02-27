@@ -12,12 +12,41 @@ import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
   {
-    path: 'category',
+    path: 'category/:id',
     component: CategoryComponent
+  },
+  {
+    path: 'not-found-component',
+    component: NotFoundComponent
+  },
+  {
+    path: 'my-cart',
+    component: MyCartComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'recovery',
+    component: RecoveryComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
